@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FetchedResultsController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/FetchedResultsController" class="dashAnchor"></a>
+    <a title="FetchedResultsController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CoreDataStack Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CoreDataStack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        FetchedResultsController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataStack.html">CoreDataStack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EntityMonitor.html">EntityMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchedResultsController.html">FetchedResultsController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FetchedResultsObjectChange.html">FetchedResultsObjectChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FetchedResultsObjectChange.html">FetchedResultsObjectChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FetchedResultsSectionChange.html">FetchedResultsSectionChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FireFrequency.html">FireFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSManagedObjectContext.html">NSManagedObjectContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSPersistentStoreCoordinator.html">NSPersistentStoreCoordinator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CoreDataModelable.html">CoreDataModelable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EntityMonitorDelegate.html">EntityMonitorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FetchedResultsControllerDelegate.html">FetchedResultsControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/FetchedResultsSectionInfo.html">FetchedResultsSectionInfo</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>FetchedResultsController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FetchedResultsController</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">CoreDataModelable</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A type safe wrapper around an <code>NSFetchedResultsController</code></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16BNRCoreDataStack24FetchedResultsController12fetchRequestCSo14NSFetchRequest"></a>
+                    <a name="//apple_ref/swift/Property/fetchRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16BNRCoreDataStack24FetchedResultsController12fetchRequestCSo14NSFetchRequest">fetchRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>NSFetchRequest</code> being used by the <code><a href="../Classes/FetchedResultsController.html">FetchedResultsController</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fetchRequest</span><span class="p">:</span> <span class="kt">NSFetchRequest</span> <span class="p">{</span> <span class="k">return</span> <span class="n">internalController</span><span class="o">.</span><span class="n">fetchRequest</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:sC16BNRCoreDataStack24FetchedResultsController9subscriptFCSo11NSIndexPathq_"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:sC16BNRCoreDataStack24FetchedResultsController9subscriptFCSo11NSIndexPathq_">subscript(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscript access to the sections</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span> <span class="k">return</span> <span class="n">internalController</span><span class="o">.</span><span class="nf">objectAtIndexPath</span><span class="p">(</span><span class="n">indexPath</span><span class="p">)</span> <span class="k">as!</span> <span class="kt">T</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16BNRCoreDataStack24FetchedResultsController14fetchedObjectsGSqGSaq___"></a>
+                    <a name="//apple_ref/swift/Property/fetchedObjects" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16BNRCoreDataStack24FetchedResultsController14fetchedObjectsGSqGSaq___">fetchedObjects</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The objects that match the fetch request</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fetchedObjects</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="p">]?</span> <span class="p">{</span> <span class="k">return</span> <span class="n">internalController</span><span class="o">.</span><span class="n">fetchedObjects</span> <span class="k">as?</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16BNRCoreDataStack24FetchedResultsController5firstGSqq__"></a>
+                    <a name="//apple_ref/swift/Property/first" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16BNRCoreDataStack24FetchedResultsController5firstGSqq__">first</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The first object matching the fetch request</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">first</span><span class="p">:</span> <span class="kt">T</span><span class="p">?</span> <span class="p">{</span> <span class="k">return</span> <span class="n">fetchedObjects</span><span class="p">?</span><span class="o">.</span><span class="n">first</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16BNRCoreDataStack24FetchedResultsController5countSi"></a>
+                    <a name="//apple_ref/swift/Property/count" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16BNRCoreDataStack24FetchedResultsController5countSi">count</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of objects matching the fetch request</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">return</span> <span class="n">fetchedObjects</span><span class="p">?</span><span class="o">.</span><span class="n">count</span> <span class="p">??</span> <span class="mi">0</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16BNRCoreDataStack24FetchedResultsController8sectionsGSqGVSs17LazyMapCollectionGSaPSo27NSFetchedResultsSectionInfo__GVS_25FetchedResultsSectionInfoq____"></a>
+                    <a name="//apple_ref/swift/Property/sections" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16BNRCoreDataStack24FetchedResultsController8sectionsGSqGVSs17LazyMapCollectionGSaPSo27NSFetchedResultsSectionInfo__GVS_25FetchedResultsSectionInfoq____">sections</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The sections returned by the <code><a href="../Classes/FetchedResultsController.html">FetchedResultsController</a></code> see <code><a href="../Structs/FetchedResultsSectionInfo.html">FetchedResultsSectionInfo</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sections</span><span class="p">:</span> <span class="kt">LazyMapCollection</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">NSFetchedResultsSectionInfo</span><span class="p">],</span> <span class="kt">FetchedResultsSectionInfo</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16BNRCoreDataStack24FetchedResultsController9cacheNameGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/cacheName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16BNRCoreDataStack24FetchedResultsController9cacheNameGSqSS_">cacheName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the file used to cache section information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cacheName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">return</span> <span class="n">internalController</span><span class="o">.</span><span class="n">cacheName</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16BNRCoreDataStack24FetchedResultsController18indexPathForObjectuRdq_CSo15NSManagedObjectq_S_17CoreDataModelable_FGS0_q__Fq_GSqCSo11NSIndexPath_"></a>
+                    <a name="//apple_ref/swift/Method/indexPathForObject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16BNRCoreDataStack24FetchedResultsController18indexPathForObjectuRdq_CSo15NSManagedObjectq_S_17CoreDataModelable_FGS0_q__Fq_GSqCSo11NSIndexPath_">indexPathForObject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>NSIndexPath</code> for a specific object in the fetchedObjects</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">indexPathForObject</span><span class="p">(</span><span class="nv">object</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSIndexPath</span><span class="p">?</span> <span class="p">{</span> <span class="k">return</span> <span class="n">internalController</span><span class="o">.</span><span class="nf">indexPathForObject</span><span class="p">(</span><span class="n">object</span><span class="p">)</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Lifecycle"></a>
+                <a name="//apple_ref/swift/Section/Lifecycle" class="dashAnchor"></a>
+                <a href="#/Lifecycle">
+                  <h3 class="section-name">Lifecycle</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16BNRCoreDataStack24FetchedResultsControllercuRdq_CSo15NSManagedObjectq_S_17CoreDataModelable_FMGS0_q__FT12fetchRequestCSo14NSFetchRequest20managedObjectContextCSo22NSManagedObjectContext18sectionNameKeyPathGSqSS_9cacheNameGSqSS__GS0_q__"></a>
+                    <a name="//apple_ref/swift/Method/init(fetchRequest:managedObjectContext:sectionNameKeyPath:cacheName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16BNRCoreDataStack24FetchedResultsControllercuRdq_CSo15NSManagedObjectq_S_17CoreDataModelable_FMGS0_q__FT12fetchRequestCSo14NSFetchRequest20managedObjectContextCSo22NSManagedObjectContext18sectionNameKeyPathGSqSS_9cacheNameGSqSS__GS0_q__">init(fetchRequest:managedObjectContext:sectionNameKeyPath:cacheName:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializer for the <code><a href="../Classes/FetchedResultsController.html">FetchedResultsController</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">fetchRequest</span><span class="p">:</span> <span class="kt">NSFetchRequest</span><span class="p">,</span> <span class="n">managedObjectContext</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">,</span> <span class="nv">sectionNameKeyPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cacheName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fetchRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>NSFetchRequest</code> used to filter the objects displayed. Note the entityName must match the specialized type <T> of this class.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>NSManagedObjectContext</code> being observed for changes</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sectionNameKeyPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional key path used for grouping results</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cacheName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional unique name used for caching results see <code>NSFetchedResultsController</code> for details</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Public Functions" class="dashAnchor"></a>
+                <a href="#/Public%20Functions">
+                  <h3 class="section-name">Public Functions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16BNRCoreDataStack24FetchedResultsController11setDelegateu__Rdq_CSo15NSManagedObjectqd__S_32FetchedResultsControllerDelegatezq_qqd__S2_1T_FGS0_q__Fqd__T_"></a>
+                    <a name="//apple_ref/swift/Method/setDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16BNRCoreDataStack24FetchedResultsController11setDelegateu__Rdq_CSo15NSManagedObjectqd__S_32FetchedResultsControllerDelegatezq_qqd__S2_1T_FGS0_q__Fqd__T_">setDelegate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Function for setting the <code><a href="../Protocols/FetchedResultsControllerDelegate.html">FetchedResultsControllerDelegate</a></code> that will receive callback events.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">setDelegate</span><span class="o">&lt;</span><span class="kt">U</span><span class="p">:</span> <span class="kt">FetchedResultsControllerDelegate</span> <span class="k">where</span> <span class="kt">U</span><span class="o">.</span><span class="kt">T</span> <span class="o">==</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt">U</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>U</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Your delegate must implement the methods in <code>FetchedResultsControllerDelegate</code> with the matching <code>CoreDataModelable</code> type that the <code>FetchedResultsController</code> is observing</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16BNRCoreDataStack24FetchedResultsController12performFetchuRdq_CSo15NSManagedObjectq_S_17CoreDataModelable_FGS0_q__FzT_T_"></a>
+                    <a name="//apple_ref/swift/Method/performFetch()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16BNRCoreDataStack24FetchedResultsController12performFetchuRdq_CSo15NSManagedObjectq_S_17CoreDataModelable_FGS0_q__FzT_T_">performFetch()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Executes the fetch request tied to the <code><a href="../Classes/FetchedResultsController.html">FetchedResultsController</a></code></p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Any errors produced by the <code>NSFetchResultsController</code>s <code>performFetch()</code> function.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">performFetch</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/bignerdranch" target="_blank" rel="external">Big Nerd Ranch</a>. All rights reserved. (Last updated: 2016-03-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

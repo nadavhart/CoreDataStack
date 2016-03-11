@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FetchedResultsControllerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/FetchedResultsControllerDelegate" class="dashAnchor"></a>
+    <a title="FetchedResultsControllerDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CoreDataStack Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CoreDataStack Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        FetchedResultsControllerDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataStack.html">CoreDataStack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EntityMonitor.html">EntityMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchedResultsController.html">FetchedResultsController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FetchedResultsObjectChange.html">FetchedResultsObjectChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FetchedResultsObjectChange.html">FetchedResultsObjectChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FetchedResultsSectionChange.html">FetchedResultsSectionChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FireFrequency.html">FireFrequency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSManagedObjectContext.html">NSManagedObjectContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSPersistentStoreCoordinator.html">NSPersistentStoreCoordinator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CoreDataModelable.html">CoreDataModelable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EntityMonitorDelegate.html">EntityMonitorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FetchedResultsControllerDelegate.html">FetchedResultsControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/FetchedResultsSectionInfo.html">FetchedResultsSectionInfo</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>FetchedResultsControllerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FetchedResultsControllerDelegate</span><span class="p">:</span> <span class="kd">class</span> <span class="p">{</span> <span class="c1">// : class for weak capture</span></code></pre>
+
+                </div>
+              </div>
+            <p>Protocol for delegate callbacks of Inserts, Deletes, Updates and Moves
+of <code>NSManagedObjects</code> as well as Inserts and Deletes of Sections.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate24fetchedResultsControlleruRq_S0__Fq_FTGCS_24FetchedResultsControllerqq_S0_1T_15didChangeObjectGOS_26FetchedResultsObjectChangeqq_S0_1T__T_"></a>
+                    <a name="//apple_ref/swift/Method/fetchedResultsController(_:didChangeObject:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate24fetchedResultsControlleruRq_S0__Fq_FTGCS_24FetchedResultsControllerqq_S0_1T_15didChangeObjectGOS_26FetchedResultsObjectChangeqq_S0_1T__T_">fetchedResultsController(_:didChangeObject:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback including all processed changes to objects</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">fetchedResultsController</span><span class="p">(</span><span class="nv">controller</span><span class="p">:</span> <span class="kt">FetchedResultsController</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>controller</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>FetchedResultsController</code> posting the callback</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>change</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of change that occurred and all details see <code>FetchedResultsObjectChange</code></p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P16BNRCoreDataStack32FetchedResultsControllerDelegate1T"></a>
+                    <a name="//apple_ref/swift/Alias/T" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P16BNRCoreDataStack32FetchedResultsControllerDelegate1T">T</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type of object being monitored. Must inherit from <code>NSManagedObject</code> and implement <code><a href="../Protocols/CoreDataModelable.html">CoreDataModelable</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="p">,</span> <span class="kt">CoreDataModelable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate24fetchedResultsControlleruRq_S0__Fq_FTGCS_24FetchedResultsControllerqq_S0_1T_16didChangeSectionGOS_27FetchedResultsSectionChangeqq_S0_1T__T_"></a>
+                    <a name="//apple_ref/swift/Method/fetchedResultsController(_:didChangeSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate24fetchedResultsControlleruRq_S0__Fq_FTGCS_24FetchedResultsControllerqq_S0_1T_16didChangeSectionGOS_27FetchedResultsSectionChangeqq_S0_1T__T_">fetchedResultsController(_:didChangeSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback including all processed changes to sections</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">fetchedResultsController</span><span class="p">(</span><span class="nv">controller</span><span class="p">:</span> <span class="kt">FetchedResultsController</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>controller</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>FetchedResultsController</code> posting the callback</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>change</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of change that occurred and all details see <code>FetchedResultsSectionChange</code></p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate41fetchedResultsControllerWillChangeContentuRq_S0__Fq_FGCS_24FetchedResultsControllerqq_S0_1T_T_"></a>
+                    <a name="//apple_ref/swift/Method/fetchedResultsControllerWillChangeContent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate41fetchedResultsControllerWillChangeContentuRq_S0__Fq_FGCS_24FetchedResultsControllerqq_S0_1T_T_">fetchedResultsControllerWillChangeContent(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback immediately before content will be changed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">fetchedResultsControllerWillChangeContent</span><span class="p">(</span><span class="nv">controller</span><span class="p">:</span> <span class="kt">FetchedResultsController</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>controller</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>FetchedResultsController</code> posting the callback</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate40fetchedResultsControllerDidChangeContentuRq_S0__Fq_FGCS_24FetchedResultsControllerqq_S0_1T_T_"></a>
+                    <a name="//apple_ref/swift/Method/fetchedResultsControllerDidChangeContent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate40fetchedResultsControllerDidChangeContentuRq_S0__Fq_FGCS_24FetchedResultsControllerqq_S0_1T_T_">fetchedResultsControllerDidChangeContent(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback immediately after content has been changed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">fetchedResultsControllerDidChangeContent</span><span class="p">(</span><span class="nv">controller</span><span class="p">:</span> <span class="kt">FetchedResultsController</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>controller</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>FetchedResultsController</code> posting the callback</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate39fetchedResultsControllerDidPerformFetchuRq_S0__Fq_FGCS_24FetchedResultsControllerqq_S0_1T_T_"></a>
+                    <a name="//apple_ref/swift/Method/fetchedResultsControllerDidPerformFetch(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP16BNRCoreDataStack32FetchedResultsControllerDelegate39fetchedResultsControllerDidPerformFetchuRq_S0__Fq_FGCS_24FetchedResultsControllerqq_S0_1T_T_">fetchedResultsControllerDidPerformFetch(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback immediately after the fetch request has been executed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">fetchedResultsControllerDidPerformFetch</span><span class="p">(</span><span class="nv">controller</span><span class="p">:</span> <span class="kt">FetchedResultsController</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>controller</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>FetchedResultsController</code> posting the callback</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/bignerdranch" target="_blank" rel="external">Big Nerd Ranch</a>. All rights reserved. (Last updated: 2016-03-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
